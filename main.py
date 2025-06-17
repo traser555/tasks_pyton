@@ -1,9 +1,25 @@
 a = int(input())
-b = int(input())
-c = int(input())
-if a == b == c:
-    print("Равносторонний")
-elif a == b != c or a == c != b or b == a != c or a != b == c:
-    print("Равнобедренный")
-elif a != b != c:
-    print("Разносторонний")
+if a > 36 or a < 0:
+    print("ошибка ввода")
+if a == 0:
+    print("зеленый")
+if 0 < a <= 10 :
+    if a % 2 != 0:
+        print("красный")
+    else:
+        print("черный")
+if 10 < a <= 18 :
+    if a % 2 != 0:
+        print("черный")
+    else:
+        print("красный")
+if 18 < a <= 28:
+    if a % 2 != 0:
+        print("красный")
+    else:
+        print("черный")
+if 28 < a <= 36 :
+    if a % 2 != 0:
+        print("черный")
+    else:
+        print("красный")
